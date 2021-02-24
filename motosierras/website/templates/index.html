@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <link rel="stylesheet" type="text/css" href="{% static 'website/css/styles.css' %}">
+
+    <section id="showcase">
+        <div class="container">
+            <h4>
+                <img src="{% static "website/images/logoextendido.jpeg" %}" alter = "Logo" class = "m-2">
+            </h4>
+        </div>
+    </section>
+    <div class="container">
+    <section id="main">
+        <h1>Bienvenido</h1>
+             <p>
+                {% lorem 1 b random %}
+            </p>
+    </section>
+    <aside id="sidebar">
+        <img src = "{% static 'website/images/local.jpeg' %}" alter = "local">
+        <img src = "{% static 'website/images/ubicacion.jpeg' %}" alter = "local">
+    </aside>
+    </div>
+    </section>
+    <div class="container">
+    </section>
+    <section id="textmarcas">
+        <h1> Nuestras Marcas </h1>
+    </section>
+    <section id="img2">
+        <a href=# ><img src = "{% static 'website/images/marcasthil.png'%}" alter = "sthil"></a>
+        <a href=#><img src = "{% static 'website/images/oleomarca.jpg'%}" alter= "oleomarca"></a>
+        <a href=#><img src = "{% static 'website/images/kawashimamarca.png'%}" alter="kawashi"></a>
+    </div>
+{% endblock %}

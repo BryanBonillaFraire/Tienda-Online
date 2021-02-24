@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <section class = "p-5">
+        <h1>Datos para envio</h1>
+        <br/><br/>
+        <div class = "form-group">
+        <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button class="btn btn-secondary">Enviar</button>
+        </div>
+    </section>
+
+{% endblock  %}
